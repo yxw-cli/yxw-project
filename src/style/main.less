@@ -1,0 +1,137 @@
+.promise(@css, @args) {
+    @{css}: @args;
+    -webkit-@{css}: @args;
+    -moz-@{css}: @args;
+    -ms-@{css}: @args;
+    -o-@{css}: @args;
+}
+
+.menu-head{
+  .promise(display,flex);
+  height: 64px;
+  justify-content: center;
+  align-items: center;
+  img{
+    width:95%;
+  }
+
+}
+.ivu-card-bordered{
+  border:none
+
+}
+.ivu-card-head{
+  width:100%;
+  height: 40px;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+  margin-bottom:10px;
+  margin-top:-10px;
+  justify-content: space-between;
+  .title{
+    width:0px;
+    flex-grow:1;
+   
+  }
+  .extra{
+      cursor: pointer;
+      &:hover{
+        color:#2db7f5;
+      }
+  }
+  
+  
+}
+.main-content{
+  overflow: auto;
+  height: calc(100vh - 64px);
+}
+
+.m-table {
+  margin: 0 10px 10px 10px;
+}
+
+.m-table .m-btn{
+  margin-bottom: 10px;
+}
+.layout{
+  border: 1px solid #d7dde4;
+  background: #f5f7f9;
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.layout-header-bar{
+  background: #fff;
+  box-shadow: 0 1px 1px rgba(0,0,0,.1);
+}
+.layout-logo-left{
+  width: 90%;
+  height: 30px;
+  background: #5b6270;
+  border-radius: 3px;
+  margin: 15px auto;
+}
+.menu-icon{
+  transition: all .3s;
+}
+.rotate-icon{
+  transform: rotate(-90deg);
+}
+.menu-item span{
+  display: inline-block;
+  overflow: hidden;
+  width: 69px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  vertical-align: bottom;
+  transition: width .2s ease .2s;
+}
+.menu-item i{
+  transform: translateX(0px);
+  transition: font-size .2s ease, transform .2s ease;
+  vertical-align: middle;
+  font-size: 16px;
+}
+.collapsed-menu span{
+  width: 0px;
+  transition: width .2s ease;
+}
+.collapsed-menu i{
+  transform: translateX(5px);
+  transition: font-size .2s ease .2s, transform .2s ease .2s;
+  vertical-align: middle;
+  font-size: 22px;
+}
+.ivu-layout-sider{
+  height: 100vh;
+  background: transparent;
+}
+.layout-header-bar{
+  display: flex;
+  align-items: center
+}
+.hearder-person{
+  position: absolute;
+  right: 10px;
+}
+.only-content{
+  height: 100%;
+  font-size: 14px;
+  padding-top: 10px;
+}
+.ivu-row .ivu-form-item {
+  margin-bottom: 10px;
+  vertical-align: top;
+  zoom: 1;
+}
+button{
+  margin-right:10px
+}
+.text-right{
+  text-align: right;
+}
+.ivu-menu{
+  position:inherit;
+}
